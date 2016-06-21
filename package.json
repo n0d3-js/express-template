@@ -1,0 +1,13 @@
+{
+  "name": "template",
+  "version": "1.0.3",
+  "scripts": {
+    "dev": "LEVEL=silly PORT=3333 nodemon dst/server.js"
+  },
+  "author": "Chyld Medford",
+  "license": "MIT",
+  "devDependencies": {
+  },
+  "dependencies": {
+  }
+}

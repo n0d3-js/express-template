@@ -1,0 +1,5 @@
+node_modules/
+dst/
+coverage/
+logs/
+temp/
