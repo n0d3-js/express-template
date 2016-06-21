@@ -4,6 +4,7 @@ npm i bluebird \
   express \
   mongoose \
   request \
+  pug \
   winston --save
 
 npm i babel-cli \
