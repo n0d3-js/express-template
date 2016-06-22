@@ -3,6 +3,7 @@ import compression from 'compression';
 import bodyParser from 'body-parser';
 import path from 'path';
 import logger from './config/logging';
+require('./config/database');
 
 logger.log('info', '[WINSTON] - log level: %s', process.env.LEVEL);
 
