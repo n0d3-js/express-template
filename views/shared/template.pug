@@ -1,0 +1,19 @@
+doctype html
+html(lang='en')
+  head
+    meta(charset='utf-8')
+    meta(http-equiv='X-UA-Compatible', content='IE=edge')
+    meta(name='viewport', content='width=device-width, initial-scale=1')
+    title Template
+    link(href='/vendor/font-awesome/css/font-awesome.min.css', rel='stylesheet')
+    link(href='/vendor/bootstrap/dist/css/bootstrap.min.css', rel='stylesheet')
+    link(href='/style.css', rel='stylesheet')
+  body
+    include nav
+    .container
+      .row
+        .col-xs-12
+          block content
+
+    script(src='/vendor/jquery/dist/jquery.min.js')
+    script(src='/vendor/bootstrap/dist/js/bootstrap.min.js')
