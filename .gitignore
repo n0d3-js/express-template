@@ -3,3 +3,4 @@ dst/
 coverage/
 logs/
 temp/
+static/vendor/
