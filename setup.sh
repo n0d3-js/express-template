@@ -1,3 +1,5 @@
+# SERVER NODE MODULES
+# **************************************************************************** #
 npm i bluebird \
   body-parser \
   compression \
@@ -6,11 +8,6 @@ npm i bluebird \
   request \
   mongoose \
   winston --save
-
-npm i react \
-  react-dom \
-  isomorphic-fetch \
-  es6-promise --save
 
 npm i babel-cli \
   babel-eslint \
@@ -30,3 +27,12 @@ npm i babel-cli \
   nodemon \
   sinon \
   supertest --save-dev
+
+# CLIENT NODE MODULES
+# **************************************************************************** #
+npm i react \
+  react-dom \
+  isomorphic-fetch \
+  es6-promise --save
+
+npm install webpack --save-dev
