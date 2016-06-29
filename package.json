@@ -6,8 +6,6 @@
   },
   "author": "Chyld Medford",
   "license": "MIT",
-  "devDependencies": {
-  },
-  "dependencies": {
-  }
+  "devDependencies": {},
+  "dependencies": {}
 }
