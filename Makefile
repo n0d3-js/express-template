@@ -6,10 +6,9 @@ main:
 	@echo [main]
 	@echo Project: Template
 
-clean:
-	@echo [clean]
-	@rm -rf coverage dst logs temp
-	@mkdir logs temp
+ready:
+	@echo [ready]
+	@mkdir -p logs
 
 compile:
 	@echo [compile]
@@ -28,4 +27,4 @@ watch: all
 	@echo [watch]
 	@$(BIN)/chokidar 'client/**/*.js' 'server/**/*.js' 'test/**/*.js' -c 'make all'
 
-all: main compile lint tests
+all: main ready compile lint tests
