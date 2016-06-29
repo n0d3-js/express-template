@@ -9,9 +9,8 @@ npm i bluebird \
 
 npm i babel-cli \
   babel-eslint \
-  babel-plugin-transform-es2015-destructuring \
-  babel-plugin-transform-es2015-modules-commonjs \
-  babel-plugin-transform-object-rest-spread \
+  babel-preset-es2015 \
+  babel-preset-react \
   babel-preset-stage-0 \
   chai \
   chokidar-cli \
