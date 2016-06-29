@@ -7,6 +7,7 @@ npm i bluebird \
   mongoose \
   request \
   mongoose \
+  serve-favicon \
   winston --save
 
 npm i babel-cli \
@@ -32,6 +33,7 @@ npm i babel-cli \
 # **************************************************************************** #
 npm i react \
   react-dom \
+  react-router \
   isomorphic-fetch \
   es6-promise --save
 

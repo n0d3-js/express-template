@@ -1,3 +1,18 @@
-import React from 'react';
+/* eslint-disable react/prop-types */
 
-export default () => <h1>hello world</h1>;
+import React from 'react';
+import Nav from './Nav';
+
+export default (props) => (
+  <div>
+    <Nav />
+
+    <div className="container">
+      <div className="row">
+        <div className="col-xs-12">
+          {props.children}
+        </div>
+      </div>
+    </div>
+  </div>
+);
