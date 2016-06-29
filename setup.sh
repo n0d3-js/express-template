@@ -7,6 +7,11 @@ npm i bluebird \
   mongoose \
   winston --save
 
+npm i react \
+  react-dom \
+  isomorphic-fetch \
+  es6-promise --save
+
 npm i babel-cli \
   babel-eslint \
   babel-preset-es2015 \
