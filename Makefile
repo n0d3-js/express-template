@@ -14,10 +14,11 @@ clean:
 compile:
 	@echo [compile]
 	@$(BIN)/babel server -d dst -q
+	@$(BIN)/webpack
 
 lint:
 	@echo [lint]
-	@$(BIN)/eslint server test -f stylish --color
+	@$(BIN)/eslint client server test -f stylish --color
 
 tests:
 	@echo [tests]
@@ -25,6 +26,6 @@ tests:
 
 watch: all
 	@echo [watch]
-	@$(BIN)/chokidar 'server/**/*.js' 'test/**/*.js' -c 'make all'
+	@$(BIN)/chokidar 'client/**/*.js' 'server/**/*.js' 'test/**/*.js' -c 'make all'
 
-all: main clean compile lint tests
+all: main compile lint tests

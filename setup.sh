@@ -35,4 +35,5 @@ npm i react \
   isomorphic-fetch \
   es6-promise --save
 
-npm install webpack --save-dev
+npm install webpack \
+  babel-loader --save-dev
