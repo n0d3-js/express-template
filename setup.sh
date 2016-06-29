@@ -4,7 +4,6 @@ npm i bluebird \
   express \
   mongoose \
   request \
-  pug \
   mongoose \
   winston --save
 

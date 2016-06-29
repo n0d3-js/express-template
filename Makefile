@@ -13,11 +13,11 @@ clean:
 
 compile:
 	@echo [compile]
-	@$(BIN)/babel src -d dst -q
+	@$(BIN)/babel server -d dst -q
 
 lint:
 	@echo [lint]
-	@$(BIN)/eslint src test -f stylish --color
+	@$(BIN)/eslint server test -f stylish --color
 
 tests:
 	@echo [tests]
@@ -25,6 +25,6 @@ tests:
 
 watch: all
 	@echo [watch]
-	@$(BIN)/chokidar 'src/**/*.js' 'test/**/*.js' -c 'make all'
+	@$(BIN)/chokidar 'server/**/*.js' 'test/**/*.js' -c 'make all'
 
 all: main clean compile lint tests
