@@ -21,7 +21,7 @@ lint:
 
 tests:
 	@echo [tests]
-	@$(BIN)/istanbul cover --print summary $(BIN)/_mocha -- --recursive -R dot
+	@PORT=5555 $(BIN)/istanbul cover --print summary $(BIN)/_mocha -- --recursive -R dot
 
 watch: all
 	@echo [watch]
