@@ -21,7 +21,7 @@ lint:
 
 tests:
 	@echo [tests]
-	@PORT=5555 DB=test_changeme LEVEL=silly $(BIN)/istanbul cover --print summary $(BIN)/_mocha -- --recursive -R dot
+	@PORT=5555 DB=test-db LEVEL=silly $(BIN)/istanbul cover --print summary $(BIN)/_mocha -- --recursive -R dot
 
 watch: all
 	@echo [watch]
