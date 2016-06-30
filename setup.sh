@@ -8,6 +8,7 @@ npm i bluebird \
   request \
   mongoose \
   serve-favicon \
+  joi \
   winston --save
 
 npm i babel-cli \
