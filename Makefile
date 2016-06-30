@@ -11,12 +11,12 @@ ready:
 	@mkdir -p logs
 
 compile-front:
-		@echo [compile-front]
-		@$(BIN)/webpack
+	@echo [compile-front]
+	@$(BIN)/webpack
 
 compile-back:
-		@echo [compile-back]
-		@$(BIN)/babel server -d dst -q
+	@echo [compile-back]
+	@$(BIN)/babel server -d dst -q
 
 lint:
 	@echo [lint]
