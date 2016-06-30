@@ -10,10 +10,13 @@ ready:
 	@echo [ready]
 	@mkdir -p logs
 
-compile:
-	@echo [compile]
-	@$(BIN)/babel server -d dst -q
-	@$(BIN)/webpack
+compile-front:
+		@echo [compile-front]
+		@$(BIN)/webpack
+
+compile-back:
+		@echo [compile-back]
+		@$(BIN)/babel server -d dst -q
 
 lint:
 	@echo [lint]
@@ -27,4 +30,10 @@ watch: all
 	@echo [watch]
 	@$(BIN)/chokidar 'client/**/*.js' 'server/**/*.js' 'test/**/*.js' -c 'make all'
 
-all: main ready compile lint tests
+fast-tests-watch: fast-tests
+	@echo [fast-tests-watch]
+	@$(BIN)/chokidar 'client/**/*.js' 'server/**/*.js' 'test/**/*.js' -c 'make fast-tests'
+
+fast-tests: main ready compile-back tests
+
+all: main ready compile-front compile-back lint tests
