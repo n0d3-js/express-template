@@ -9,6 +9,7 @@ npm i bluebird \
   mongoose \
   serve-favicon \
   joi \
+  morgan \
   winston --save
 
 npm i babel-cli \

@@ -1,0 +1,20 @@
+[
+  {
+    "_id": { "$oid": "01234567890123456789abcd" },
+    "a_str" : "hello world 1",
+    "a_bool" : true,
+    "a_32bit": 3,
+    "a_64bit": { "$numberLong": "123" },
+    "a_double": 3.14,
+    "a_date": { "$date": "2016-03-15T00:00:00.000Z" }
+  },
+  {
+    "_id": { "$oid": "01234567890123456789abce" },
+    "a_str" : "hello world 2",
+    "a_bool" : false,
+    "a_32bit": 5,
+    "a_64bit": { "$numberLong": "456" },
+    "a_double": 9.81,
+    "a_date": { "$date": "2015-03-15T00:00:00.000Z" }
+  }
+]
